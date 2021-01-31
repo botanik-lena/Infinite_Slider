@@ -8,9 +8,9 @@ function slider() {
     images[current].classList.remove("hide-image");
 }
 
+// document.querySelector(".infinite-slider").onclick = slider;
 
-document.querySelector(".infinite-slider").onclick = slider;
-document.querySelector(".btn-infinite-next").onclick = function sliderRight() {
+document.querySelector(".btn-infinite-next").onclick = function () {
     if (current - 1 == -1) {
         current = images.length - 1;
     }
