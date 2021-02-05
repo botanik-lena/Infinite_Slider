@@ -19,20 +19,13 @@
 
 /* ---------------------------------------- */
 
-.infinite-slider-wrap {
+.infinite-slider {
     border: 1px solid black;
     width: 650px;
     height: 400px;
     margin: 10px auto;
     position: relative;
-    margin-bottom: 130px;
-}
-
-.infinite-slider {
-    width: 650px;
-    height: 400px;
     overflow: hidden;
-    position: relative;
 }
 
 .infinite-slider img {

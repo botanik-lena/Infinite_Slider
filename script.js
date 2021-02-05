@@ -9,16 +9,6 @@ function slider() {
 }
 
 document.querySelector(".btn-infinite-next").onclick = function () {
-    if (current - 1 == -1) {
-        current = images.length - 1;
-    }
-    else {
-        current--;
-    }
-    slider();
-};
-
-document.querySelector(".btn-infinite-previous").onclick = function () {
     if (current + 1 == images.length) {
         current = 0;
     }
@@ -28,12 +18,22 @@ document.querySelector(".btn-infinite-previous").onclick = function () {
     slider();
 };
 
-function sliderRight() {
+document.querySelector(".btn-infinite-previous").onclick = function () {
     if (current - 1 == -1) {
         current = images.length - 1;
     }
     else {
         current--;
+    }
+    slider();
+};
+
+function sliderRight() {
+    if (current + 1 == images.length) {
+        current = 0;
+    }
+    else {
+        current++;
     }
 
     slider();
